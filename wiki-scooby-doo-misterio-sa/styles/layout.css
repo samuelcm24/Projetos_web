@@ -1,0 +1,35 @@
+/*========================= Parte do Gif de fundo do site==============================*/
+
+/* Div que segura o video de fundo*/
+.fundo_video{
+    position: fixed; /*o Gif fica preso no fundo da tela*/
+    inset: 0; /*O gif preenche toda a tela*/
+    z-index: -3; /*deixa o gif atras dos outros elementos*/
+    overflow: hidden; /* Escondemos o excesso de conteudo*/
+}
+
+/* Estilo do video*/
+
+.fundo_video video{
+    width: 100%; /*ocupamos toda a largura da tela*/
+    height: 100%; /*ocupamos toda a altura da tela*/
+    object-fit: cover; /*cubrimos a tela sem distorcer*/
+
+    /* Escurece e ajusta contraste/saturação do vídeo */
+    filter: brightness(0.35) contrast(1.1) saturate(0.8);
+}
+
+/* Camada escura acima do vídeo */
+.camada_escura {
+    position: fixed;                 /* fica fixa na tela */
+    inset: 0;                        /* ocupa tudo */
+    z-index: -2;                     /* fica acima do vídeo, mas atrás do conteúdo */
+    background: rgba(0, 0, 0, 0.45); /* preto transparente */
+}
+
+/* Conteúdo principal da página */
+.conteudo {
+    position: relative; /* garante que fique acima do fundo */
+    z-index: 1;         /* coloca na frente */
+    padding: 40px;      /* espaço interno */
+}

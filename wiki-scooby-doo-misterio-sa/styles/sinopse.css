@@ -1,0 +1,106 @@
+/* Parte da sinopse */
+.sinopse {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+}
+
+.card_sinopse {
+    max-width: 1500px;
+    margin: 0 auto;
+    min-height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    /* agora vira um banner com 2 lados */
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+    transition: 0.2s;
+}
+
+/* lado da imagem */
+.imagem_sinopse {
+    position: relative;
+    height: 100%;
+}
+
+.imagem_sinopse img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.65);
+}
+
+/* degradê escuro por cima da imagem */
+.imagem_sinopse::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.05), rgba(0,0,0,0.65));
+}
+
+/* lado do texto */
+.conteudo_sinopse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.25), rgba(0,0,0,0.65));
+}
+
+.titulo_sinopse {
+    margin-bottom: 18px;
+    font-size: 42px;
+    font-family: "Batolah", sans-serif;
+    color: #FFD700;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.frase_sinopse {
+    margin-top: 16px;
+    font-size: 19px;
+    color: white;
+    font-family: "Batolah", sans-serif;
+    line-height: 1.6;
+}
+
+/* hover opcional */
+.card_sinopse:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
+}
+
+/* responsivo */
+@media (max-width: 900px) {
+    .card_sinopse {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem_sinopse {
+        min-height: 280px;
+    }
+
+    .conteudo_sinopse {
+        padding: 30px;
+    }
+
+    .titulo_sinopse {
+        font-size: 32px;
+    }
+
+    .frase_sinopse {
+        font-size: 17px;
+    }
+}
+
+@font-face {
+    font-family: "Batolah";
+    src: url("../Fontes/batolah/Batolah.ttf") format("truetype");
+}

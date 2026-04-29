@@ -1,0 +1,157 @@
+/*Parte dos personagens principais e vilões*/
+
+.galeria{
+    position: relative; /*mantemos o card acima do video de fundo*/
+    z-index: 1; /*nos garante que o card fique acima do fundo*/
+    padding: 40px 20px;
+}
+
+.card_galeria{
+    max-width: 1500px; /*limitamos a largura para que o texto nao fique muito esticado*/;
+    margin: 0 auto; /* centralizamos o texto*/
+    padding: 30px; /* tamanho do espaço interno do card*/
+    border-radius: 20px; /* aqui ajustamos a borda do card*/
+
+    /*parte que faz o card ficar transparente*/
+    background: rgba(0, 0, 0, 0.55);
+
+    /*parte da borda do card*/
+    border: 1px solid rgba(255, 215, 0, .25);
+
+    /*sombra que destaca o card*/
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+
+    /*efeito que suaviza as transições*/
+    transition: 0.2s;
+
+}
+
+.card_galeria:hover{
+    transform: translateY(-5px);
+}
+
+.frase_galeria{
+    margin-top: 18px; /*espaco acima do texto*/
+    margin-bottom: 25px; /*espaço abaixo do texto*/
+    font-size: 17px; /*tamanho da fonte*/
+    color: white; /*cor da letra*/
+    font-family: "Batolah", sans-serif; /*fonte da letra*/
+    line-height: 1.5; /*espaçamento entre as linhas*/
+}
+
+.titulo_galeria{
+    margin-bottom: 18px; /* espaço que fica abaixo do titulo*/
+    font-size: 32px; /*tamanho da fonte*/
+    font-family: "Batolah", sans-serif; /*fonte da letra*/
+    color: #FFD700; /*cor da letra*/
+    text-align: center; /*colocamos o titulo centralizado*/
+}
+
+/*parte que separa os personagens por grupo dentro da galeria*/
+.grupo_galeria{
+    margin-top: 35px; /*espaço entre o texto inicial e cada grupo*/
+    padding-top: 25px; /*espaço interno acima do subtitulo*/
+}
+
+/*parte que cria mais distância entre herois e viloes*/
+.grupo_galeria + .grupo_galeria{
+    margin-top: 55px; /*espaço entre os dois blocos da galeria*/
+}
+
+/*subtitulo usado para identificar cada grupo da galeria*/
+.subtitulo_galeria{
+    margin-bottom: 22px; /*espaço abaixo do subtitulo*/
+    font-size: 28px; /*tamanho do subtitulo*/
+    font-family: "Batolah", sans-serif; /*fonte do subtitulo*/
+    text-align: center; /*centraliza o nome do grupo*/
+}
+
+/*linha de destaque para a parte dos herois*/
+.grupo_herois{
+    border-top: 1px solid rgba(0, 255, 170, 0.35); /*linha verde para separar os herois*/
+}
+
+/*cor do subtitulo dos herois*/
+.grupo_herois .subtitulo_galeria{
+    color: #7CFFB2; /*verde claro para lembrar a equipe principal*/
+}
+
+/*linha de destaque para a parte dos viloes*/
+.grupo_viloes{
+    border-top: 1px solid rgba(170, 90, 255, 0.45); /*linha roxa para separar os viloes*/
+}
+
+/*cor do subtitulo dos viloes*/
+.grupo_viloes .subtitulo_galeria{
+    color: #C88CFF; /*roxo claro para dar clima mais misterioso*/
+}
+
+.clique_mouse{
+    padding: 20px;
+    cursor: pointer;
+    color: #FFD700; /*dourado*/
+}
+
+/* Alteração: classe reutilizável para indicar qual parte do card recebe o clique. */
+.botao-card{
+    cursor: pointer;
+}
+
+/*card que fica retraido*/
+.card_retraido{
+    display: none;
+    padding: 0 20px 20px;
+    line-height: 1.7;
+    color: #f3f3f3;
+}
+
+
+/*mostra o conteudo do card*/
+.card_retraido.ativo{
+    display: block;
+}
+
+
+.conteudo_galeria{
+    display: grid; /*organiza os cards em formato de grade*/
+    grid-template-columns: repeat(6, 155px); /*cria 3 espaços de card e permite centralizar a ultima linha*/
+    gap: 40px; /*espaçamento entre os elementos*/
+    justify-content: center; /*centraliza a grade dentro do card principal*/
+    align-items: start; /*alinha os cards ao topo sem esticar os outros cards da linha*/
+    margin-top: 25px; /*espaço acima do bloco*/
+}
+
+.conteudo_galeria .mini_card_galeria{
+    grid-column: span 2; /*cada card ocupa duas colunas pequenas, formando um card de 350px*/
+    align-self: start; /*impede que um card acompanhe a altura do card aberto ao lado*/
+}
+
+.conteudo_galeria .mini_card_galeria:nth-child(4):nth-last-child(2){
+    grid-column: 2 / span 2; /*centraliza os dois cards da ultima linha quando existem 5 cards*/
+}
+
+@media (max-width: 1250px){
+    .conteudo_galeria{
+        grid-template-columns: repeat(4, 155px); /*exibe 2 cards por linha em telas medias*/
+    }
+
+    .conteudo_galeria .mini_card_galeria:nth-child(4):nth-last-child(2){
+        grid-column: span 2; /*remove o ajuste usado em telas maiores*/
+    }
+
+    .conteudo_galeria .mini_card_galeria:last-child:nth-child(odd){
+        grid-column: 2 / span 2; /*centraliza o ultimo card quando ele fica sozinho na linha*/
+    }
+}
+
+@media (max-width: 850px){
+    .conteudo_galeria{
+        grid-template-columns: minmax(0, 350px); /*exibe 1 card por linha em telas pequenas*/
+    }
+
+    .conteudo_galeria .mini_card_galeria,
+    .conteudo_galeria .mini_card_galeria:nth-child(4):nth-last-child(2),
+    .conteudo_galeria .mini_card_galeria:last-child:nth-child(odd){
+        grid-column: 1; /*mantem os cards dentro da unica coluna*/
+    }
+}

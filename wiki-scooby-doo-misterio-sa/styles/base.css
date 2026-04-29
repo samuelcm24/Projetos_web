@@ -1,0 +1,14 @@
+/* função para resetar o css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh; /*altura minima da tela inteira*/
+    overflow-x: hidden; /*Impede a rolagem lateral*/
+    font-family: Arial, sans-serif;/*fonte padrão*/
+    color: white; /*texto branco*/
+    background-color: #000; /* Fundo preto para caso o video demore carregar*/
+}

@@ -1,0 +1,326 @@
+/*=============== Parte dos mistérios e curiosidades ===============*/
+
+/*Parte dos mistérios principais da série*/
+.misterios{
+    position: relative; /*mantem a seção acima do video de fundo*/
+    z-index: 1; /*garante que o conteúdo apareça na frente*/
+    padding: 40px 20px; /*espaço em volta da seção*/
+}
+
+.card_misterios{
+    max-width: 1500px; /*limita a largura do card*/
+    margin: 0 auto; /*centraliza o card*/
+    padding: 30px; /*espaço interno do card*/
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.55); /*fundo escuro transparente*/
+    border: 1px solid rgba(255, 215, 0, 0.25); /*borda dourada suave*/
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35); /*sombra para destacar do fundo*/
+    transition: 0.2s; /*suaviza o hover*/
+}
+
+.card_misterios:hover{
+    transform: translateY(-5px); /*move o card levemente para cima*/
+}
+
+.titulo_misterios{
+    margin-bottom: 18px; /*espaço abaixo do titulo*/
+    font-size: 32px;
+    font-family: "Batolah", sans-serif; /*fonte usada no site*/
+    color: #FFD700; /*cor dourada*/
+    text-align: left;
+}
+
+.frase_misterios{
+    margin-top: 18px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    color: white;
+    font-family: "Batolah", sans-serif;
+    line-height: 1.6;
+}
+
+/*Painel usado para a interação extra com JavaScript*/
+.painel_investigacao{
+    display: flex; /*deixa o botão e o texto lado a lado*/
+    align-items: center;
+    gap: 18px; /*espaço entre os itens*/
+    flex-wrap: wrap; /*permite quebrar em telas menores*/
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 16px; /*espaço interno do painel*/
+    border-radius: 16px;
+    background: rgba(80, 180, 255, 0.08); /*fundo azul transparente*/
+    border: 1px solid rgba(80, 180, 255, 0.25); /*borda azul suave*/
+}
+
+.botao_modo_investigacao{
+    padding: 10px 16px; /*espaço interno do botão*/
+    border: 1px solid rgba(255, 215, 0, 0.45);
+    border-radius: 12px;
+    background: rgba(255, 215, 0, 0.12);
+    color: #FFD700;
+    font-family: "Batolah", sans-serif;
+    font-size: 16px;
+    cursor: pointer; /*mostra que é clicável*/
+    transition: 0.2s; /*suaviza o hover*/
+}
+
+.botao_modo_investigacao:hover{
+    background: rgba(255, 215, 0, 0.22);
+    transform: translateY(-2px);
+}
+
+.texto_modo_investigacao{
+    color: white;
+    font-family: "Batolah", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*Lista ordenada dos mistérios*/
+.ordem_misterios{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 20px; /*espaço interno da lista*/
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08); /*fundo transparente*/
+    border: 1px solid rgba(255, 215, 0, 0.18); /*borda dourada suave*/
+}
+
+.titulo_bloco_misterio{
+    margin-bottom: 14px;
+    color: #FFD700;
+    font-family: "Batolah", sans-serif;
+    font-size: 24px;
+}
+
+.lista_misterios{
+    padding-left: 24px; /*espaço para aparecer a numeração*/
+    color: white;
+    font-family: "Batolah", sans-serif;
+    font-size: 16px;
+    line-height: 1.7; /*espaçamento entre os itens*/
+}
+
+/*Destaque visual ativado pelo JavaScript*/
+body.modo_investigacao .mini_card_misterio{
+    border-color: rgba(255, 215, 0, 0.55); /*destaca a borda dos mistérios*/
+    box-shadow: 0 0 18px rgba(255, 215, 0, 0.18); /*brilho dourado suave*/
+    background: rgba(255, 215, 0, 0.08); /*muda o fundo quando ativado*/
+}
+
+body.modo_investigacao .numero_misterio{
+    color: #FFD700;
+    border-color: rgba(255, 215, 0, 0.45);
+    background: rgba(255, 215, 0, 0.14);
+}
+
+/*Cards dos mistérios*/
+.conteudo_misterios{
+    display: grid; /*organiza os cards em grade*/
+    grid-template-columns: repeat(5, minmax(190px, 1fr)); /*cinco cards por linha em telas grandes*/
+    gap: 22px; /*espaço entre os cards*/
+    align-items: start; /*mantem os cards alinhados pelo topo*/
+    margin-top: 25px;
+}
+
+.mini_card_misterio{
+    min-height: 170px; /*mantem os cards equilibrados*/
+    padding: 18px; /*espaço interno do card*/
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(80, 180, 255, 0.28); /*borda azul para diferenciar dos outros cards*/
+    transition: 0.2s; /*suaviza o hover*/
+}
+
+.mini_card_misterio:hover{
+    transform: translateY(-5px);
+}
+
+.numero_misterio{
+    display: inline-block; /*permite controlar padding e margem*/
+    margin-bottom: 12px;
+    padding: 6px 10px; /*espaço interno do marcador*/
+    border-radius: 999px;
+    background: rgba(80, 180, 255, 0.15);
+    border: 1px solid rgba(80, 180, 255, 0.35);
+    color: #8ED8FF;
+    font-family: "Batolah", sans-serif;
+    font-size: 14px;
+}
+
+.titulo_card_misterio{
+    margin-bottom: 10px;
+    color: #FFD700;
+    font-family: "Batolah", sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.info_misterios{
+    font-size: 16px;
+    color: white;
+    font-family: "Batolah", sans-serif;
+    line-height: 1.5;
+}
+
+/*Parte das curiosidades da série*/
+.curiosidades{
+    position: relative; /*mantem a seção acima do video de fundo*/
+    z-index: 1; /*garante que o conteúdo apareça na frente*/
+    padding: 40px 20px; /*espaço em volta da seção*/
+}
+
+.card_curiosidades{
+    max-width: 1500px; /*limita a largura do card*/
+    margin: 0 auto; /*centraliza o card*/
+    padding: 30px; /*espaço interno do card*/
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.55); /*fundo escuro transparente*/
+    border: 1px solid rgba(255, 215, 0, 0.25); /*borda dourada suave*/
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+    transition: 0.2s; /*suaviza o hover*/
+}
+
+.card_curiosidades:hover{
+    transform: translateY(-5px);
+}
+
+.titulo_curiosidades{
+    margin-bottom: 18px;
+    font-size: 32px;
+    font-family: "Batolah", sans-serif;
+    color: #FFD700;
+    text-align: left;
+}
+
+.frase_curiosidades{
+    margin-top: 18px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    color: white;
+    font-family: "Batolah", sans-serif;
+    line-height: 1.6;
+}
+
+/*Tabela de informações rápidas*/
+.bloco_tabela_curiosidades{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    overflow-x: auto; /*permite rolar a tabela em telas pequenas*/
+}
+
+.titulo_tabela_curiosidades{
+    margin-bottom: 14px;
+    color: #FFD700;
+    font-family: "Batolah", sans-serif;
+    font-size: 24px;
+}
+
+.tabela_curiosidades{
+    width: 100%; /*ocupa toda a largura disponível*/
+    min-width: 520px; /*mantem a tabela legível em telas pequenas*/
+    border-collapse: collapse; /*junta as bordas da tabela*/
+    overflow: hidden;
+    border-radius: 16px;
+    font-family: "Batolah", sans-serif;
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.tabela_curiosidades th,
+.tabela_curiosidades td{
+    padding: 14px; /*espaço interno das células*/
+    border: 1px solid rgba(255, 215, 0, 0.18); /*borda da tabela*/
+    text-align: left;
+}
+
+.tabela_curiosidades th{
+    color: #FFD700;
+    background: rgba(255, 215, 0, 0.12);
+}
+
+/*Cards das curiosidades*/
+.conteudo_curiosidades{
+    display: grid; /*organiza as curiosidades em grade*/
+    grid-template-columns: repeat(3, minmax(230px, 1fr)); /*três cards por linha em telas grandes*/
+    gap: 24px; /*espaço entre os cards*/
+    margin-top: 25px;
+}
+
+.mini_card_curiosidade{
+    min-height: 210px; /*mantem os cards equilibrados*/
+    padding: 20px; /*espaço interno do card*/
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.18);
+    transition: 0.2s; /*suaviza o hover*/
+}
+
+.mini_card_curiosidade:hover{
+    transform: translateY(-5px);
+}
+
+.tag_curiosidade{
+    display: inline-block; /*permite controlar padding e margem*/
+    margin-bottom: 14px;
+    padding: 6px 10px; /*espaço interno da etiqueta*/
+    border-radius: 999px;
+    background: rgba(255, 215, 0, 0.12);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    color: #FFD700;
+    font-family: "Batolah", sans-serif;
+    font-size: 14px;
+}
+
+.titulo_card_curiosidade{
+    margin-bottom: 12px;
+    color: #FFD700;
+    font-family: "Batolah", sans-serif;
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.info_curiosidades{
+    font-size: 16px;
+    color: white;
+    font-family: "Batolah", sans-serif;
+    line-height: 1.5;
+}
+
+/*Responsividade*/
+@media (max-width: 1100px){
+    .conteudo_misterios{
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+
+    .conteudo_curiosidades{
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 700px){
+    .card_misterios,
+    .card_curiosidades{
+        padding: 24px;
+    }
+
+    .titulo_misterios,
+    .titulo_curiosidades{
+        font-size: 28px;
+    }
+
+    .painel_investigacao{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .botao_modo_investigacao{
+        width: 100%;
+    }
+
+    .conteudo_misterios,
+    .conteudo_curiosidades{
+        grid-template-columns: 1fr;
+    }
+}

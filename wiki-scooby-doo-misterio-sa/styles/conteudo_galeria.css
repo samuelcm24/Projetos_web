@@ -1,0 +1,62 @@
+.img_galeria{
+    width: 100%;/*a imagem ocupa toda a largura */
+    height: 200px; /*altura fixa para as imagens */
+    overflow: hidden; /*esconde o excesso da imagem */
+    border-radius: 12px; /*Borda arredondada*/
+    margin-bottom: 12px; /*faz com que as imagens fiquem espaçadas*/
+}
+
+
+.img_galeria img{
+    width: 100%; /*a imagem ocupa toda a largura do card*/
+    height: 100%; /*a imagem ocupa toda a altura do card*/
+    object-fit: cover; /*cobre o card sem distorcer a imagem*/
+    display: block; /*remove o espaço em branco abaixo da imagem*/
+}
+
+.bloco_img{
+    display: flex;/*faz com que as imagens fiquem uma do lado da outra*/
+    gap: 25px; /*espaçamento entre as imagens*/
+    flex-wrap: wrap; /*permite que as imagens fiquem em múltiplas linhas se não couberem na linha*/
+    justify-content: flex-start; /*alinha as imagens a esquerda*/
+    margin-top: 20px; /*espaço acima do bloco de imagens*/
+}
+
+.mini_card_galeria{
+    width: 100%; /*o card ocupa a coluna criada pelo grid*/
+    background-color: rgba(255, 255, 255, 0.08); /*fundo semi transparente*/
+    border: 1px solid rgba(255, 215, 0, 0.18); /*tamanho e cor da borda*/
+    padding: 16px; /*espaçamento interno entre os elementos*/
+    transition: 0.2s; /*suaviza a transição de estados*/
+    border-radius: 20px; /*borda arredondada*/
+}
+
+/*ajuste para os nomes dos personagens dentro dos mini cards*/
+.mini_card_galeria .titulo_galeria{
+    margin-bottom: 0; /*remove a margem grande usada no titulo principal*/
+    font-size: 24px; /*diminui o texto para caber melhor no mini card*/
+    line-height: 1.2; /*aproxima as linhas quando o nome for maior*/
+    overflow-wrap: break-word; /*quebra nomes grandes antes de ultrapassar o card*/
+}
+
+/*borda dos mini cards que ficam no grupo dos herois*/
+.grupo_herois .mini_card_galeria{
+    border-color: rgba(0, 255, 170, 0.22); /*deixa os cards dos herois com destaque verde*/
+}
+
+/*borda dos mini cards que ficam no grupo dos viloes*/
+.grupo_viloes .mini_card_galeria{
+    border-color: rgba(170, 90, 255, 0.28); /*deixa os cards dos viloes com destaque roxo*/
+}
+
+
+.mini_card_galeria:hover{
+    transform: translateY(-5px); /*efeito de zoom ao passar o mouse*/
+}
+
+
+.info_personagens{
+    font-size: 17px; /*Tamanho do texto*/
+    color: white; 
+    line-height: 1.5;
+}
