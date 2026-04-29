@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Faz a página se ajustar corretamente em telas menores (celular/tablet) -->
+    <title>Wiki | Scooby-Doo Mistério S/A</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sinopse.css" />
+    <link rel="stylesheet" href="styles/temporada.css" />
+    <link rel="stylesheet" href="styles/galeria.css" />
+    <link rel="stylesheet" href="styles/misterios_curiosidades.css" />
+    <link rel="stylesheet" href="styles/rodape.css"/>
+    <link rel="stylesheet" href="styles/conteudo_galeria.css"/>
+</head>
+<body>
+
+    <header class="cabecalho" id="topo">
+        <div class="container">
+            <nav class="menu">
+                <h1 class="logo">Scooby-Doo Mistério S/A</h1>
+                
+                <ul class="menu_links">
+
+                <li><a href="#episodios">Temporadas</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#misterios">Mistérios</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="fundo_video">
+        <!--
+            Vídeo de fundo
+            autoplay = começa sozinho
+            muted = sem som
+            loop = repete infinitamente
+            playsinline = funciona melhor em celular
+        -->
+
+        <video autoplay muted loop playsinline>
+             <source src="Imagens/Fundo_site.webm" type="video/webm">
+        </video>
+    </div>
+
+    <div class="camada_escura"></div>
+
+    <!--Conteudo principal da página-->
+    <main class="conteudo">
+
+        <!-- Sinopse -->
+        <section class="sinopse" id="sinopse">
+            <div class="card_sinopse">
+
+                <div class="imagem_sinopse">
+                    <img src="Imagens/banner.webp" alt="Scooby-Doo Mistério S/A">
+                </div>
+
+                <div class="conteudo_sinopse">
+                    <h2 class="titulo_sinopse">Sinopse:</h2>
+
+                    <p class="frase_sinopse">
+                        Scooby-Doo! Mistério S/A apresenta uma releitura mais sombria
+                        e moderna da fórmula clássica da franquia.
+                    </p>
+
+                    <p class="frase_sinopse">
+                        Ambientada em Crystal Cove, conhecida como “o lugar mais assombrado da Terra”,
+                        a série acompanha a Mistério S/A enquanto desmascara criminosos disfarçados
+                        de monstros e investiga segredos antigos ligados a um grande mistério.
+                    </p>
+
+                    <p class="frase_sinopse">
+                        Suspense, humor, drama e mistérios em uma das versões mais marcantes de Scooby-Doo.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Seção da temporada -->
+
+        <section class="temporada" id="episodios">
+            <div class="card_temporada">
+                <h2 class="titulo_temporada">Temporadas:</h2>
+
+                <p class="frase_temporada">
+                    Scooby-Doo! Mistério S/A possui episódios que misturam humor,
+                    suspense e uma trama contínua mais sombria.
+                </p>
+
+                <div class="conteudo_temporadas">
+
+                    <div class="blocos_temporadas_resumo">
+                        <div class="mini_card_temporada card_expansivel">
+
+                            <div class="botao-card">
+                                <div class="img_temporadas">
+                                    <img src="Imagens/capa_primeira_temp.jpeg" alt="Temporada 1">
+                                </div>
+                                <h3 class="nome_temporada">Temporada 1</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_temporada">
+                                    1ª Temporada: O grupo luta para equilibrar dramas adolescentes e namoros enquanto desenterra o passado sombrio de suas próprias famílias. Ao seguirem os rastros de um grupo de 
+                                    investigadores que sumiu anos atrás, eles descobrem que a cidade de Baía Cristal esconde um segredo perigoso que transformou amigos em inimigos mortais.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mini_card_temporada card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_temporadas">
+                                    <img src="Imagens/capa_segunda_temp.jpeg" alt="Temporada 2">
+                                </div>
+                                <h3 class="nome_temporada">Temporada 2</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_temporada">
+                                    Com a equipe reunida após uma separação traumática, a busca pelas peças de um disco planeisférico antigo torna-se uma corrida contra o tempo. Enfrentando vilões impiedosos e profecias apocalípticas sobre o evento conhecido como Nibiru, a Mistério S/A precisa decidir se está disposta a sacrificar tudo para impedir a libertação de um mal que moldou a história da humanidade.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resumo_temporadas">
+                        <h3 class="titulo_resumo">Resumo geral</h3>
+                        <p>
+                            Ao longo das duas temporadas, a Mistério S/A enfrenta monstros,
+                            pistas antigas e segredos escondidos em Crystal Cove.
+                        </p>
+                        <p>
+                            Em Baía Cristal, uma cidade famosa por seu histórico de aparições sobrenaturais, Fred, Daphne, Velma, Salsicha e Scooby-Doo estão prestes a descobrir que os mistérios locais são mais reais do que imaginavam. Enquanto resolvem casos 
+                            semanais, o grupo encontra pistas deixadas por um estranho chamado "Sr. E", que os leva a investigar o desaparecimento da Mistério S/A original. O que começa como uma busca por respostas revela uma conspiração milenar, um tesouro 
+                            amaldiçoado e uma entidade cósmica que ameaça apagar a existência como a conhecemos.
+                            <br>
+                            <br>
+                            Para ter acesso a detalhes completos sobre os episódios de cada temporada, clique Aqui: <br> <a href="https://scoobydoo.fandom.com/pt-br/wiki/Scooby-Doo!_Mist%C3%A9rio_S.A." target="_blank" >Scooby-Doo! Mistério S.A</a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção do galeria-->
+        <section class="galeria" id="galeria">
+            <div class="card_galeria">
+                <h2 class="titulo_galeria">Galeria Dos Personagens: </h2>
+
+                <p class="frase_galeria">
+                    A serie nos apresenta diversos personagens, cada um com suas características únicas, que contribuem 
+                    para a dinâmica do grupo e para a resolução dos mistérios, além claro dos seus diversos vilões e mostros. 
+                    <br> Abaixo estão os principais herois e vilões da série:
+                </p>
+
+
+
+                <!--================== Parte dos herois =================-->
+
+                <div class="grupo_galeria grupo_herois">
+                    <h3 class="subtitulo_galeria">Herois da Mistério S/A</h3>
+
+                    <div class="conteudo_galeria">
+                        <!--============ Scooby ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Herois/scooby-doo.jpg" alt="Scooby">
+                                </div>
+                                <h3 class="titulo_galeria">Scooby-Doo</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Cão medroso, leal e divertido da Mistério S/A. Em meio aos perigos de Crystal Cove, 
+                                    costuma enfrentar os mistérios ao lado de Salsicha, mesmo preferindo 
+                                    fugir dos monstros.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!--============ Salsicha ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Herois/salsicha.jpg" alt="Salsicha">
+                                </div>
+                                <h3 class="titulo_galeria">Salsicha</h3>
+                            </div>
+                            
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Melhor amigo de Scooby, é medroso, faminto e atrapalhado. Na série, também vive conflitos pessoais,
+                                    especialmente por causa de sua relação com Velma e sua amizade com Scooby.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Velma ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Herois/Velma.jpg" alt="Velma">
+                                </div>
+                                <h3 class="titulo_galeria">Velma</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    A mente lógica da Mistério S/A. Analisa pistas, conecta informações 
+                                    e tem papel essencial para revelar a verdade por trás dos mistérios da cidade.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Fred ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Herois/fred.webp" alt="Fred">
+                                </div>
+                                <h3 class="titulo_galeria">Fred</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Líder da Mistério S/A e obcecado por armadilhas. Em Mistério S/A, 
+                                    sua história familiar ganha grande importância dentro dos segredos de Crystal Cove.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Daphne ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Herois/Daphne.jpeg" alt="Daphne">
+                                </div>
+                                <h3 class="titulo_galeria">Daphne</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Integrante corajosa da equipe e apaixonada por Fred. 
+                                    Na série, Daphne participa ativamente dos mistérios e também enfrenta conflitos ligados ao relacionamento com ele.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--================== Parte referente aos viloes =================-->
+
+                <div class="grupo_galeria grupo_viloes">
+                    <h3 class="subtitulo_galeria">Personagens secundários</h3>
+
+                    <div class="conteudo_galeria">
+                        <!--============ Professor Pericles ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Viloes/Professor_Pericles.webp" alt="Professor Pericles">
+                                </div>
+                                <h3 class="titulo_galeria">Professor Pericles</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Mascote da antiga Mistério S/A e uma das figuras mais perigosas da trama. 
+                                    Manipula eventos em Crystal Cove enquanto busca poder e controle sobre o grande mistério.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Senhor E ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Viloes/senhor_E.webp" alt="Senhor E">
+                                </div>
+                                <h3 class="titulo_galeria">Senhor E</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Personagem misterioso que envia pistas para a equipe, mas também esconde seus próprios interesses. 
+                                    Sua ligação com o passado da cidade torna suas ações difíceis de confiar.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Prefeito Jones ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Viloes/Prefeito_Jones.webp" alt="Prefeito Jones">
+                                </div>
+                                <h3 class="titulo_galeria">Prefeito Jones</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Prefeito de Crystal Cove e pai de Fred. Tenta manter a fama turística da cidade, 
+                                    mesmo quando isso significa esconder segredos importantes da Mistério S/A.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Marcie Fleach ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Viloes/Marcie_Fleach.webp" alt="Marcie Fleach">
+                                </div>
+                                <h3 class="titulo_galeria">Marcie Fleach</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Conhecida como Água de Salsicha, começa como rival de Velma e se envolve com os mistérios da cidade. 
+                                    Com o tempo, sua inteligência também a aproxima da equipe.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Angel Dynamite ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Viloes/Angel_dynamite.jpg" alt="Angel Dynamite">
+                                </div>
+                                <h3 class="titulo_galeria">Angel Dynamite</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Dona da rádio local e uma personagem ligada ao passado da Mistério S/A original. 
+                                    Suas informações ajudam a revelar partes escondidas da história de Crystal Cove.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Brad Chiles ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Viloes/Brad_Chiles.webp" alt="Brad Chiles">
+                                </div>
+                                <h3 class="titulo_galeria">Brad Chiles</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Integrante da antiga Mistério S/A e parte dos segredos familiares de Fred. 
+                                    Suas escolhas mostram como o passado da cidade ainda interfere no presente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Judy Reeves ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Viloes/Judy_Reeves.webp" alt="Judy Reeves">
+                                </div>
+                                <h3 class="titulo_galeria">Judy Reeves</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Também fez parte da Mistério S/A original e tem ligação direta com a história de Fred. 
+                                    Sua presença reforça os conflitos entre família, ambição e mistério.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Cherife ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Viloes/Cherife.webp" alt="Cherife">
+                                </div>
+                                <h3 class="titulo_galeria">Cherife</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Autoridade policial de Crystal Cove. Apesar do jeito atrapalhado, participa de muitos casos 
+                                    e aparece sempre que os mistérios começam a chamar atenção demais.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--============ Prefeita Janet ============-->
+                        <div class="mini_card_galeria card_expansivel">
+                            <div class="botao-card">
+                                <div class="img_galeria">
+                                    <img src="Imagens/Imagens galeria/Viloes/Prefeita_Janet.webp" alt="Prefeita Janet">
+                                </div>
+                                <h3 class="titulo_galeria">Prefeita Janet</h3>
+                            </div>
+
+                            <div class="card_retraido conteudo-card">
+                                <p class="info_personagens">
+                                    Assume papel importante na cidade depois dos conflitos políticos de Crystal Cove. 
+                                    Sua presença ajuda a mostrar as mudanças que acontecem ao longo da série.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Seção dos mistérios -->
+        <section class="misterios" id="misterios">
+            <div class="card_misterios">
+                <h2 class="titulo_misterios">Mistérios:</h2>
+
+                <p class="frase_misterios">
+                    A série não trabalha apenas com monstros da semana. Ao longo dos episódios,
+                    várias pistas se conectam e revelam uma trama maior escondida em Crystal Cove.
+                </p>
+
+                <!--============ Botão para interação extra com JavaScript ============-->
+
+                <div class="painel_investigacao">
+                    <button class="botao_modo_investigacao" id="botao_modo_investigacao" type="button">
+                        Ativar modo investigação
+                    </button>
+
+                    <p class="texto_modo_investigacao" id="texto_modo_investigacao">
+                        Modo investigação desativado.
+                    </p>
+                </div>
+
+                <!--============ Lista ordenada dos mistérios principais ============-->
+
+                <div class="ordem_misterios">
+                    <h3 class="titulo_bloco_misterio">Ordem principal da investigação</h3>
+
+                    <ol class="lista_misterios">
+                        <li>Entender as pistas deixadas pelo Senhor E.</li>
+                        <li>Investigar o desaparecimento da antiga Mistério S/A.</li>
+                        <li>Reunir as partes do Disco Planisférico.</li>
+                        <li>Descobrir os segredos escondidos em Crystal Cove.</li>
+                        <li>Enfrentar a ameaça ligada a Nibiru.</li>
+                    </ol>
+                </div>
+
+                <!--================== Parte referente aos mistérios principais =================-->
+
+                <div class="conteudo_misterios">
+                    <!--============ Disco Planisférico ============-->
+                    <article class="mini_card_misterio card_expansivel">
+                        <div class="botao-card">
+                            <span class="numero_misterio">01</span>
+                            <h3 class="titulo_card_misterio">Disco Planisférico</h3>
+                        </div>
+
+                        <div class="card_retraido conteudo-card">
+                            <p class="info_misterios">
+                                Um artefato antigo dividido em partes, procurado por diferentes personagens.
+                                As peças do disco guiam a Mistério S/A para segredos maiores sobre Crystal Cove.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!--============ Antiga Mistério S/A ============-->
+                    <article class="mini_card_misterio card_expansivel">
+                        <div class="botao-card">
+                            <span class="numero_misterio">02</span>
+                            <h3 class="titulo_card_misterio">Antiga Mistério S/A</h3>
+                        </div>
+
+                        <div class="card_retraido conteudo-card">
+                            <p class="info_misterios">
+                                O desaparecimento do antigo grupo de investigadores é um dos maiores enigmas da série.
+                                A história deles se conecta diretamente com os pais de alguns personagens e com o destino da nova equipe.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!--============ Senhor E ============-->
+                    <article class="mini_card_misterio card_expansivel">
+                        <div class="botao-card">
+                            <span class="numero_misterio">03</span>
+                            <h3 class="titulo_card_misterio">Senhor E</h3>
+                        </div>
+
+                        <div class="card_retraido conteudo-card">
+                            <p class="info_misterios">
+                                Uma figura misteriosa que envia pistas para Scooby e seus amigos.
+                                Mesmo ajudando a equipe, suas mensagens também escondem intenções próprias.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!--============ Segredos de Crystal Cove ============-->
+                    <article class="mini_card_misterio card_expansivel">
+                        <div class="botao-card">
+                            <span class="numero_misterio">04</span>
+                            <h3 class="titulo_card_misterio">Segredos de Crystal Cove</h3>
+                        </div>
+
+                        <div class="card_retraido conteudo-card">
+                            <p class="info_misterios">
+                                A cidade depende da fama de lugar assombrado, mas seus mistérios vão além do turismo.
+                                Famílias, autoridades e vilões escondem informações que mudam a forma como a equipe entende a cidade.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!--============ Nibiru ============-->
+                    <article class="mini_card_misterio card_expansivel">
+                        <div class="botao-card">
+                            <span class="numero_misterio">05</span>
+                            <h3 class="titulo_card_misterio">Nibiru</h3>
+                        </div>
+
+                        <div class="card_retraido conteudo-card">
+                            <p class="info_misterios">
+                                O mistério final envolve uma ameaça muito maior do que os disfarces tradicionais.
+                                A trama de Nibiru aumenta o peso da história e fecha o arco principal da série.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção das curiosidades -->
+        <section class="curiosidades" id="curiosidades">
+            <div class="card_curiosidades">
+                <h2 class="titulo_curiosidades">Curiosidades:</h2>
+
+                <p class="frase_curiosidades">
+                    Scooby-Doo! Mistério S/A se destaca por misturar a fórmula clássica da franquia
+                    com continuidade, drama adolescente e referências a histórias de terror e investigação.
+                </p>
+
+                <!--================== Tabela de informações rápidas =================-->
+
+                <div class="bloco_tabela_curiosidades">
+                    <h3 class="titulo_tabela_curiosidades">Dados rápidos da série</h3>
+
+                    <table class="tabela_curiosidades">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Informação</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Formato</td>
+                                <td>Série animada</td>
+                            </tr>
+
+                            <tr>
+                                <td>Temporadas</td>
+                                <td>2 temporadas</td>
+                            </tr>
+
+                            <tr>
+                                <td>Cenário principal</td>
+                                <td>Crystal Cove</td>
+                            </tr>
+
+                            <tr>
+                                <td>Equipe central</td>
+                                <td>Mistério S/A</td>
+                            </tr>
+
+                            <tr>
+                                <td>Tom da história</td>
+                                <td>Suspense, humor e drama</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--================== Parte referente as curiosidades da série =================-->
+
+                <div class="conteudo_curiosidades">
+                    <!--============ Tom mais sombrio ============-->
+                    <article class="mini_card_curiosidade">
+                        <span class="tag_curiosidade">Estilo</span>
+                        <h3 class="titulo_card_curiosidade">Tom mais sombrio</h3>
+                        <p class="info_curiosidades">
+                            A série usa uma atmosfera mais séria do que muitas versões anteriores,
+                            mas ainda mantém o humor clássico de Scooby e Salsicha.
+                        </p>
+                    </article>
+
+                    <!--============ História contínua ============-->
+                    <article class="mini_card_curiosidade">
+                        <span class="tag_curiosidade">Roteiro</span>
+                        <h3 class="titulo_card_curiosidade">História contínua</h3>
+                        <p class="info_curiosidades">
+                            Muitos episódios funcionam sozinhos, mas também deixam pistas para uma narrativa maior,
+                            fazendo a trama evoluir ao longo das temporadas.
+                        </p>
+                    </article>
+
+                    <!--============ Relações da equipe ============-->
+                    <article class="mini_card_curiosidade">
+                        <span class="tag_curiosidade">Personagens</span>
+                        <h3 class="titulo_card_curiosidade">Relações da equipe</h3>
+                        <p class="info_curiosidades">
+                            A série explora conflitos entre os membros da Mistério S/A,
+                            principalmente envolvendo amizade, família e relacionamentos.
+                        </p>
+                    </article>
+
+                    <!--============ Referências ============-->
+                    <article class="mini_card_curiosidade">
+                        <span class="tag_curiosidade">Referências</span>
+                        <h3 class="titulo_card_curiosidade">Homenagens ao terror</h3>
+                        <p class="info_curiosidades">
+                            Alguns episódios fazem referências a filmes, livros e figuras conhecidas do terror,
+                            adaptando essas ideias ao estilo da franquia Scooby-Doo.
+                        </p>
+                    </article>
+
+                    <!--============ Crystal Cove ============-->
+                    <article class="mini_card_curiosidade">
+                        <span class="tag_curiosidade">Cenário</span>
+                        <h3 class="titulo_card_curiosidade">Crystal Cove</h3>
+                        <p class="info_curiosidades">
+                            A cidade funciona quase como uma personagem própria,
+                            pois seus segredos influenciam os casos, os moradores e a história da equipe.
+                        </p>
+                    </article>
+
+                    <!--============ Máscaras e disfarces ============-->
+                    <article class="mini_card_curiosidade">
+                        <span class="tag_curiosidade">Mistério</span>
+                        <h3 class="titulo_card_curiosidade">Monstros e disfarces</h3>
+                        <p class="info_curiosidades">
+                            Mesmo com uma trama maior, a série preserva a tradição de revelar criminosos,
+                            farsas e planos escondidos por trás das aparições assustadoras.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+        <p>Wiki Scooby-Doo Misterio S/A por Samuel Campos Martins</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
