@@ -1,0 +1,10 @@
+/* Rodapé do site */
+.rodape{
+    position: relative; /* mantém acima do vídeo de fundo */
+    z-index: 1; /* garante visibilidade */
+    padding: 20px; /* espaço interno */
+    text-align: center; /* centraliza o texto */
+    color: #FFD700; /* texto dourado */
+    background: rgba(0, 0, 0, 0.55); /* fundo escuro transparente */
+    border-top: 1px solid rgba(255, 215, 0, 0.25); /* linha superior suave */
+}

@@ -1,0 +1,150 @@
+/* função para resetar o css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh; /*altura minima da tela inteira*/
+  overflow-x: hidden; /*Impede a rolagem lateral*/
+  font-family: Arial, sans-serif; /*fonte padrão*/
+  color: white; /*texto branco*/
+  background-color: #000; /* Fundo preto para caso o video demore carregar*/
+}
+
+.area_login {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.area_login input {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+}
+
+.area_login button {
+  padding: 8px 14px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#mensagem-login {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* Área administrativa */
+
+.barra_admin {
+  position: fixed;
+  top: 18px;
+  right: 25px;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+}
+
+.botao_admin,
+.botao_sair_admin {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffe600;
+  border: 1px solid rgba(255, 230, 0, 0.6);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao_admin:hover,
+.botao_sair_admin:hover {
+  background-color: #ffe600;
+  color: #000;
+}
+
+.modal_login {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_login.ativo {
+  display: flex;
+}
+
+.caixa_login {
+  position: relative;
+  width: 360px;
+  max-width: 90%;
+  background-color: rgba(10, 10, 10, 0.96);
+  border: 1px solid rgba(255, 230, 0, 0.7);
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 230, 0, 0.25);
+}
+
+.caixa_login h2 {
+  color: #ffe600;
+  margin-bottom: 10px;
+}
+
+.texto_login {
+  color: #ddd;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.caixa_login input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.botao_entrar_login {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffe600;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao_entrar_login:hover {
+  background-color: #fff176;
+}
+
+.fechar_login {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+#mensagem-login {
+  margin-top: 15px;
+  font-weight: bold;
+}

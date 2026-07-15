@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki | Scooby-Doo Mistério S/A</title>
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sinopse.css" />
+    <link rel="stylesheet" href="styles/temporada.css" />
+    <link rel="stylesheet" href="styles/galeria.css" />
+    <link rel="stylesheet" href="styles/misterios_curiosidades.css" />
+    <link rel="stylesheet" href="styles/rodape.css" />
+    <link rel="stylesheet" href="styles/conteudo_galeria.css" />
+  </head>
+
+  <body>
+    <div class="barra_admin">
+      <button id="abrir-login" class="botao_admin" type="button">
+        Área Admin
+      </button>
+
+      <button id="botao-sair" class="botao_sair_admin" type="button">
+        Sair
+      </button>
+    </div>
+
+    <div class="modal_login" id="modal-login">
+      <div class="caixa_login">
+        <button id="fechar-login" class="fechar_login" type="button">×</button>
+
+        <h2>Login Administrativo</h2>
+        <p class="texto_login">
+          Acesse para carregar e gerenciar os conteúdos da wiki.
+        </p>
+
+        <input type="email" id="email-login" placeholder="E-mail" />
+        <input type="password" id="senha-login" placeholder="Senha" />
+
+        <button id="botao-login" class="botao_entrar_login" type="button">
+          Entrar
+        </button>
+
+        <p id="mensagem-login"></p>
+      </div>
+    </div>
+
+    <header class="cabecalho" id="topo">
+      <div class="container">
+        <nav class="menu">
+          <h1 class="logo">Scooby-Doo Mistério S/A</h1>
+
+          <ul class="menu_links">
+            <li><a href="#episodios">Temporadas</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#misterios">Mistérios</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="fundo_video">
+      <video autoplay muted loop playsinline>
+        <source src="Imagens/Fundo_site.webm" type="video/webm" />
+      </video>
+    </div>
+
+    <div class="camada_escura"></div>
+
+    <main class="conteudo">
+      <!-- Sinopse -->
+      <section class="sinopse" id="sinopse">
+        <div class="card_sinopse">
+          <div class="imagem_sinopse">
+            <img src="Imagens/banner.webp" alt="Scooby-Doo Mistério S/A" />
+          </div>
+
+          <div class="conteudo_sinopse">
+            <h2 class="titulo_sinopse">Sinopse:</h2>
+
+            <div id="conteudos-sinopse">
+              <p class="frase_sinopse">Faça login para carregar a sinopse.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Temporadas -->
+      <section class="temporada" id="episodios">
+        <div class="card_temporada">
+          <h2 class="titulo_temporada">Temporadas:</h2>
+
+          <div class="conteudo_temporadas">
+            <div class="blocos_temporadas_resumo" id="conteudos-temporadas">
+              <p class="frase_temporada">
+                Faça login para carregar os conteúdos.
+              </p>
+            </div>
+
+            <div class="resumo_temporadas">
+              <h3 class="titulo_resumo">Resumo geral</h3>
+
+              <div id="conteudos-resumo-temporadas">
+                <p>Faça login para carregar o resumo das temporadas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeria -->
+      <section class="galeria" id="galeria">
+        <div class="card_galeria">
+          <h2 class="titulo_galeria">Galeria dos Personagens:</h2>
+
+          <div id="conteudos-texto-galeria">
+            <p class="frase_galeria">
+              Faça login para carregar a descrição da galeria.
+            </p>
+          </div>
+
+          <!-- Heróis -->
+          <div class="grupo_galeria grupo_herois">
+            <h3 class="subtitulo_galeria">Heróis da Mistério S/A</h3>
+
+            <div class="conteudo_galeria" id="conteudos-herois">
+              <p class="frase_galeria">Faça login para carregar os heróis.</p>
+            </div>
+          </div>
+
+          <!-- Personagens secundários -->
+          <div class="grupo_galeria grupo_viloes">
+            <h3 class="subtitulo_galeria">Personagens secundários</h3>
+
+            <div class="conteudo_galeria" id="conteudos-secundarios">
+              <p class="frase_galeria">
+                Faça login para carregar os personagens secundários.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mistérios -->
+      <section class="misterios" id="misterios">
+        <div class="card_misterios">
+          <h2 class="titulo_misterios">Mistérios:</h2>
+
+          <div id="conteudos-texto-misterios">
+            <p class="frase_misterios">
+              Faça login para carregar a descrição dos mistérios.
+            </p>
+          </div>
+
+          <div class="painel_investigacao">
+            <button
+              class="botao_modo_investigacao"
+              id="botao_modo_investigacao"
+              type="button"
+            >
+              Ativar modo investigação
+            </button>
+
+            <p class="texto_modo_investigacao" id="texto_modo_investigacao">
+              Modo investigação desativado.
+            </p>
+          </div>
+
+          <div class="ordem_misterios">
+            <h3 class="titulo_bloco_misterio">
+              Ordem principal da investigação
+            </h3>
+
+            <ol class="lista_misterios" id="conteudos-ordem-misterios">
+              <li>Faça login para carregar a ordem da investigação.</li>
+            </ol>
+          </div>
+
+          <div class="conteudo_misterios" id="conteudos-misterios">
+            <p class="frase_misterios">
+              Faça login para carregar os mistérios.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Curiosidades -->
+      <section class="curiosidades" id="curiosidades">
+        <div class="card_curiosidades">
+          <h2 class="titulo_curiosidades">Curiosidades:</h2>
+
+          <div id="conteudos-texto-curiosidades">
+            <p class="frase_curiosidades">
+              Faça login para carregar a descrição das curiosidades.
+            </p>
+          </div>
+
+          <div class="bloco_tabela_curiosidades">
+            <h3 class="titulo_tabela_curiosidades">Dados rápidos da série</h3>
+
+            <table class="tabela_curiosidades">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Informação</th>
+                </tr>
+              </thead>
+
+              <tbody id="conteudos-tabela-curiosidades">
+                <tr>
+                  <td colspan="2">
+                    Faça login para carregar os dados rápidos.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="conteudo_curiosidades" id="conteudos-curiosidades">
+            <p class="frase_curiosidades">
+              Faça login para carregar as curiosidades.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>Wiki Scooby-Doo Mistério S/A por Samuel Campos Martins</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
